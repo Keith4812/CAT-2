@@ -1,5 +1,5 @@
 /*
-NAME: KEITH BARRACK
+NAME: KEITH BARRACK OJUANG
 REG NO: PA106/G/29044/25
 DESCRIPTION:  PROGRAM TO DISPLAY NUMERICS
 */
@@ -55,4 +55,5 @@ int main() {
     printf("Net Pay: $%.2f\n", netPay);
 
     return 0;
+
 }
