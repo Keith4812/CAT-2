@@ -12,11 +12,11 @@ int main() {
     int numbers[10];
     int sum = 0, count = 0;
     float average;
-    int i;        // declare loop variable here
-    int num;      // used for reading numbers later
-    char ch;      // for displaying file contents
+    int i;        
+    int num;      
+    char ch;     
 
-    // 1. Prompt user to input 10 integers and save to "input.txt"
+    // 1. Prompt user to input 10 integer
     inputFile = fopen("input.txt", "w");
     if (inputFile == NULL) {
         printf("Error  in opening input.txt for writing.\n");
@@ -32,7 +32,7 @@ int main() {
     fclose(inputFile);
     printf("\nData successfully saved to input.txt\n");
 
-    // 2. Read integers from "input.txt", calculate sum and average, write to "output.txt"
+    
     inputFile = fopen("input.txt", "r");
     if (inputFile == NULL) {
         printf("Error opening input.txt for reading.\n");
@@ -62,7 +62,7 @@ int main() {
     fprintf(outputFile, "Sum = %d\nAverage = %.2f\n", sum, average);
     fclose(inputFile);
     fclose(outputFile);
-    printf("Sum and average successfully written to output.txt\n");
+    printf("The Sum and average successfully written to output.txt\n");
 
     // 3. Display contents of both files
     printf("\nContents of input.txt:\n");
@@ -88,4 +88,5 @@ int main() {
     fclose(outputFile);
 
     return 0;
+
 }
